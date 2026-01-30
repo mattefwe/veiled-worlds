@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://cw8hxaperah27"]
+
+[ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scenes/instantiate_questions.gd" id="1_3l5nu"]
+
+[node name="DialogueScene" type="Control" unique_id=2049827529]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1832321068]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.74691355
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=2004881005]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_3l5nu")
+
+[node name="ColorRect" type="ColorRect" parent="ScrollContainer/VBoxContainer" unique_id=542375769]
+layout_mode = 2
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Sensors" type="Control" parent="." unique_id=537190069]
+layout_mode = 1
+anchor_right = 0.21788195
+anchor_bottom = 0.74691355
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Sensors" unique_id=1004592996]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sensors" unique_id=503797878]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Sensors/VBoxContainer" unique_id=781313627]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Atmosphere:"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Sensors/VBoxContainer" unique_id=1053838268]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Gravity:"
+
+[node name="Label3" type="Label" parent="Sensors/VBoxContainer" unique_id=1340643656]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Water:"
+
+[node name="Label4" type="Label" parent="Sensors/VBoxContainer" unique_id=1337710249]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Temperature:"
+
+[node name="Label5" type="Label" parent="Sensors/VBoxContainer" unique_id=1710442991]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Resources:"
+
+[node name="Answers" type="Control" parent="." unique_id=1549394801]
+layout_mode = 1
+anchor_left = 0.7291667
+anchor_right = 1.0
+anchor_bottom = 0.7484568
+grow_horizontal = 0
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Answers" unique_id=92455597]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 1, 1, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Answers" unique_id=2076210949]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Answer"
+metadata/_edit_use_anchors_ = true
+
+[node name="Alien" type="Control" parent="." unique_id=910958232]
+layout_mode = 1
+anchor_left = 0.27864584
+anchor_right = 0.7309028
+anchor_bottom = 0.74691355
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Alien" unique_id=946738735]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.134357
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Alien" unique_id=791030773]

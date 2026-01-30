@@ -1,6 +1,6 @@
 extends Node
 
-var deficenti =[
+var aliens =[
 	{
 		"id" : "N",
 		"picture" : "Path",
