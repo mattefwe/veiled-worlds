@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cw8hxaperah27"]
 
-[ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scenes/instantiate_questions.gd" id="1_3l5nu"]
+[ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scripts/instantiate_questions.gd" id="1_3l5nu"]
 
 [node name="DialogueScene" type="Control" unique_id=2049827529]
 layout_mode = 3
