@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://cw8hxaperah27"]
 
 [ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scripts/instantiate_questions.gd" id="1_3l5nu"]
-[ext_resource type="Script" uid="uid://difq4kjaniwyk" path="res://scenes/sensors.gd" id="1_cno1m"]
+[ext_resource type="Script" uid="uid://difq4kjaniwyk" path="res://scripts/sensors.gd" id="1_cno1m"]
+[ext_resource type="Script" uid="uid://ctanetr7xrldq" path="res://scripts/buttonyes.gd" id="3_qpcyj"]
+[ext_resource type="Script" uid="uid://cx6mshbxmj6l4" path="res://scripts/buttonno.gd" id="4_bhyd5"]
 
 [node name="DialogueScene" type="Control" unique_id=2049827529]
 layout_mode = 3
@@ -159,8 +161,13 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Yes"
+script = ExtResource("3_qpcyj")
 
 [node name="Button2" type="Button" parent="Alien/VBoxContainer/HBoxContainer" unique_id=17847163]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "No"
+script = ExtResource("4_bhyd5")
+
+[connection signal="pressed" from="Alien/VBoxContainer/HBoxContainer/Button" to="Alien/VBoxContainer/HBoxContainer/Button" method="_on_pressed"]
+[connection signal="pressed" from="Alien/VBoxContainer/HBoxContainer/Button2" to="Alien/VBoxContainer/HBoxContainer/Button2" method="_on_pressed"]

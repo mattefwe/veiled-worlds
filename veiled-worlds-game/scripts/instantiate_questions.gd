@@ -92,14 +92,15 @@ func count_questions(id, arrayquestions, dictquestions):
 
 
 func _on_pressed(answer):
-	if not num_ans > max_ans:
+	if not num_ans == max_ans:
 		#print(answer)
+		print(num_ans)
 		num_ans = num_ans + 1
 		%AnsLabel.text = answer
 		update()
 	
 func _check(index):
-	if not num_ans > max_ans:
+	if not num_ans == max_ans:
 		if index == 0:
 			AtmAnswered = true
 
