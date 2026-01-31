@@ -15,6 +15,8 @@ func _ready():
 	for i in range(arrayquestions.size()):
 		var button = Button.new()
 		button.text = arrayquestions[i]
+		button.button_down.connect(_on_pressed.bind(dictquestions[arrayquestions[i]]))
+		button.button_down.connect(_check.bind(i))
 		add_child(button)
 	
 
@@ -23,17 +25,26 @@ func _process(_delta):
 	pass
 
 func update():
-	
+	var arrayquestions = []
+	var dictquestions = {}
 	##cancello tutti i figli
 	var children = get_children()
-	for x in range(children.size()-1):
-		children[x].queue_free()
+	print(AtmAnswered)
+	print(GvtAnswered)
+	print(WtrAnswered)
+	print(TmpAnswered)
+	print(ResAnswered)
+	for child in children:
+		remove_child(child)
+		child.queue_free()
 	
 	##conto e riinizializzo tutti i figli
 	count_questions(currentid, arrayquestions, dictquestions)
 	for i in range(arrayquestions.size()):
 		var button = Button.new()
 		button.text = arrayquestions[i]
+		button.button_down.connect(_on_pressed.bind(dictquestions[arrayquestions[i]]))
+		button.button_down.connect(_check.bind(i))
 		add_child(button)
 	
 
@@ -52,7 +63,7 @@ func count_questions(id, arrayquestions, dictquestions):
 	dictquestions["PlaceholderRes"] = "PlaceholderAnsRes"
 
 	var count = 0
-	for x in range(extradialogues.size()-1):
+	for x in range(extradialogues.size()):
 		if(extradialogues[x].prerequisite == "AtmAnswered" and AtmAnswered == true):
 			count = count+1
 			dictquestions[extradialogues[x].question] = extradialogues[x].answer
@@ -79,3 +90,27 @@ func count_questions(id, arrayquestions, dictquestions):
 			arrayquestions.append(extradialogues[x].question)
 		
 	return count
+
+
+func _on_pressed(answer):
+	#print(answer)
+	update()
+	
+func _check(index):
+	print(index)
+	if index == 0:
+		AtmAnswered = true
+	
+	if index == 1:
+		GvtAnswered = true
+	
+	if index == 2:
+		WtrAnswered = true
+	
+	if index == 3:
+		TmpAnswered = true
+	
+	if index == 4:
+		ResAnswered = true
+	
+	update()
