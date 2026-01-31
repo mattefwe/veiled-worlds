@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cw8hxaperah27"]
 
 [ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scripts/instantiate_questions.gd" id="1_3l5nu"]
+[ext_resource type="Script" uid="uid://difq4kjaniwyk" path="res://scenes/sensors.gd" id="1_cno1m"]
 
 [node name="DialogueScene" type="Control" unique_id=2049827529]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_cno1m")
 metadata/_edit_use_anchors_ = true
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1832321068]
@@ -53,28 +55,33 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="Sensors/VBoxContainer" unique_id=781313627]
+[node name="Atmosphere" type="Label" parent="Sensors/VBoxContainer" unique_id=781313627]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Atmosphere:"
 metadata/_edit_use_anchors_ = true
 
-[node name="Label2" type="Label" parent="Sensors/VBoxContainer" unique_id=1053838268]
+[node name="Gravity" type="Label" parent="Sensors/VBoxContainer" unique_id=1053838268]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Gravity:"
 
-[node name="Label3" type="Label" parent="Sensors/VBoxContainer" unique_id=1340643656]
+[node name="Water" type="Label" parent="Sensors/VBoxContainer" unique_id=1340643656]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Water:"
 
-[node name="Label4" type="Label" parent="Sensors/VBoxContainer" unique_id=1337710249]
+[node name="Temperature" type="Label" parent="Sensors/VBoxContainer" unique_id=1337710249]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Temperature:"
 
-[node name="Label5" type="Label" parent="Sensors/VBoxContainer" unique_id=1710442991]
+[node name="Resources" type="Label" parent="Sensors/VBoxContainer" unique_id=1710442991]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
 text = "Resources:"
@@ -111,17 +118,15 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Alien" type="Control" parent="." unique_id=910958232]
 layout_mode = 1
-anchor_left = 0.27864584
+anchor_left = 0.21961805
 anchor_right = 0.7309028
 anchor_bottom = 0.74691355
-grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Alien" unique_id=946738735]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.134357
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
@@ -130,3 +135,32 @@ color = Color(1, 1, 0, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="Alien" unique_id=791030773]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Alien" unique_id=302082575]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.820248
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="Alien/VBoxContainer" unique_id=2063928631]
+layout_mode = 2
+text = "Should we land here?"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Alien/VBoxContainer" unique_id=598147488]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Alien/VBoxContainer/HBoxContainer" unique_id=568946713]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Yes"
+
+[node name="Button2" type="Button" parent="Alien/VBoxContainer/HBoxContainer" unique_id=17847163]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "No"
