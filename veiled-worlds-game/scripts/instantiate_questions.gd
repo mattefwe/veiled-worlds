@@ -19,7 +19,7 @@ func _ready():
 	for i in range(arrayquestions.size()):
 		var button = Button.new()
 		button.text = arrayquestions[i]
-		button.button_down.connect(_on_pressed.bind(dictquestions[arrayquestions[i]]))
+		button.button_down.connect(_on_pressed.bind(arrayquestions[i], dictquestions[arrayquestions[i]]))
 		button.button_down.connect(_check.bind(i))
 		add_child(button)
 	
@@ -42,7 +42,7 @@ func update():
 	for i in range(arrayquestions.size()):
 		var button = Button.new()
 		button.text = arrayquestions[i]
-		button.button_down.connect(_on_pressed.bind(dictquestions[arrayquestions[i]]))
+		button.button_down.connect(_on_pressed.bind(arrayquestions[i], dictquestions[arrayquestions[i]]))
 		button.button_down.connect(_check.bind(i))
 		add_child(button)
 	
@@ -91,12 +91,12 @@ func count_questions(id, arrayquestions, dictquestions):
 	return count
 
 
-func _on_pressed(answer):
+func _on_pressed(question, answer):
 	if not num_ans > max_ans:
 		#print(answer)
 		print(num_ans)
 		num_ans = num_ans + 1
-		%AnsLabel.text = answer
+		%AnsLabel.text = %AnsLabel.text + question + "\n" + answer + "\n"+"------------------"+"\n"
 		update()
 	
 func _check(index):
@@ -116,8 +116,5 @@ func _check(index):
 		if index == 4:
 			ResAnswered = true
 
+		
 		update()
-
-
-func _print_answer():
-	return self.get_meta("answer_to_write")
