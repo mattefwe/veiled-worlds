@@ -6,6 +6,11 @@
 [ext_resource type="FontFile" uid="uid://dst6oodlfsybr" path="res://assets/fonts/anokha/Anokha.ttf" id="4_dwn8g"]
 
 [resource]
+RichTextLabel/font_sizes/bold_font_size = 58
+RichTextLabel/font_sizes/bold_italics_font_size = 55
+RichTextLabel/font_sizes/italics_font_size = 50
+RichTextLabel/font_sizes/mono_font_size = 50
+RichTextLabel/font_sizes/normal_font_size = 50
 RichTextLabel/fonts/bold_font = ExtResource("1_nqh8a")
 RichTextLabel/fonts/bold_italics_font = ExtResource("2_7txb7")
 RichTextLabel/fonts/italics_font = ExtResource("3_2q64m")

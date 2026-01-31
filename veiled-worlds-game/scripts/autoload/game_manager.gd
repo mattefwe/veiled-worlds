@@ -3,6 +3,7 @@ extends Node
 var arr_aliens_visited = []
 var main_menu = preload("res://scenes/gui/main_menu.tscn")
 var pause_menu = preload("res://scenes/gui/pause_menu.tscn")
+var start_cutscene = preload("res://cutscenes/start_cutscene.tscn")
 var game_scene = preload("res://scenes/dialogue_scene.tscn")
 var game_running : bool = false
 
@@ -18,7 +19,7 @@ func _process(delta: float) -> void:
 
 func start_game() -> void:
 	resume_game()
-	SceneManager.transition_to_scene(game_scene.resource_path)
+	SceneManager.transition_to_scene(start_cutscene.resource_path)
 
 
 func quit_game() -> void:

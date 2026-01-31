@@ -1,29 +1,414 @@
 [gd_scene format=3 uid="uid://bqc3qcpbg87tg"]
 
-[node name="StartCutscene" type="Node" unique_id=1489723782]
+[ext_resource type="Theme" uid="uid://baflgsjc8d2nf" path="res://ui/cutscene_theme.tres" id="1_t4pws"]
+[ext_resource type="Script" uid="uid://bes01vjpq6p1" path="res://cutscenes/start_cutscene.gd" id="2_otm3q"]
+
+[sub_resource type="Animation" id="Animation_t4pws"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FirstPart/FirstText:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FadeToBlack:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FirstPart/EARTH:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(940, 400)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FirstPart:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SecondPart:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ThirdPart:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SecondPart/SecondText:visible_characters")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SecondPart/SHIP:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(100, 300)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("ThirdPart/ThirdText1:visible_characters")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [-1]
+}
+
+[sub_resource type="Animation" id="Animation_otm3q"]
+resource_name = "start_cutscene"
+length = 71.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("FirstPart/FirstText:visible_characters")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(2, 9, 10.5, 13),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0, 115, 115, 138]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FadeToBlack:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 14.5, 15.5, 16, 17, 36.5, 37.5, 38, 39, 67.5, 70),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("FirstPart/EARTH:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 15.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(800, 380), Vector2(500, 380)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("FirstPart:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 15.75),
+"transitions": PackedFloat32Array(0, 0),
+"update": 1,
+"values": [true, false]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("SecondPart:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 15.75, 37.75),
+"transitions": PackedFloat32Array(0, 0, 0),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("ThirdPart:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 37.75),
+"transitions": PackedFloat32Array(0, 0),
+"update": 1,
+"values": [false, true]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("SecondPart/SecondText:visible_characters")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(15.75, 18, 20.9, 21.7, 28.5, 29.2, 35),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0, 0, 41, 41, 136, 136, 224]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("SecondPart/SHIP:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(15.75, 37.75),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(100, 300), Vector2(300, 320)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("ThirdPart/ThirdText1:visible_characters")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(37.75, 40, 43.5, 44.5, 50.7, 51.7, 58.5, 60, 65),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0, 0, 37, 37, 106, 106, 175, 175, 211]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jv4bd"]
+_data = {
+&"RESET": SubResource("Animation_t4pws"),
+&"start_cutscene": SubResource("Animation_otm3q")
+}
+
+[node name="StartCutscene" type="Control" unique_id=337222219]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_t4pws")
+script = ExtResource("2_otm3q")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1912703365]
+libraries/ = SubResource("AnimationLibrary_jv4bd")
+autoplay = &"start_cutscene"
+
+[node name="FirstPart" type="Control" parent="." unique_id=168516857]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="FirstPart" unique_id=645292416]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="EARTH" type="ColorRect" parent="FirstPart" unique_id=1725889957]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -140.0
+offset_right = 580.16895
+offset_bottom = 460.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FirstText" type="RichTextLabel" parent="FirstPart" unique_id=1653049432]
+z_index = 1000
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 771.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "The Earth fell in silence. The [b][shake rate=20.0 level=5 connected=1][color=#a30812]Masakahr[/color][/shake][/b] war machine left nothing behind but ash and echoes.
+Humanity was erased...
+
+[shake rate=20.0 level=5 connected=1]Or so they thought...[/shake]"
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="SecondPart" type="Control" parent="." unique_id=1870192022]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="SecondPart" unique_id=251370317]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SHIP" type="ColorRect" parent="SecondPart" unique_id=252942040]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -860.0
+offset_top = -240.0
+offset_right = -360.0
+offset_bottom = -40.008545
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SecondText" type="RichTextLabel" parent="SecondPart" unique_id=1002233625]
+z_index = 1000
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 771.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "From the ruins, a single spark escaped.
+
+A stolen vessel, torn from [shake rate=20.0 level=5 connected=1][color=#a30812]the enemy[/color][/shake]’s grip, carrying the last breathing [b][i][color=#02e8d5][wave amp=15.0 freq=5.0 connected=1]souls[/wave][/color][/i][/b] of a dead world.
+
+They possess the invaders’ [i][color=#ffe84f]star charts[/color][/i] — a database of a thousand alien civilizations."
+visible_characters_behavior = 1
+
+[node name="ThirdPart" type="Control" parent="." unique_id=233252907]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="ColorRect" parent="ThirdPart" unique_id=180078064]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SHIP" type="ColorRect" parent="ThirdPart" unique_id=1573963882]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ThirdText1" type="RichTextLabel" parent="ThirdPart" unique_id=1910134829]
+z_index = 1000
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 771.0
+offset_right = -20.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "The galaxy is a [b][color=#025e49][tornado radius=3.0 freq=2.0 connected=1]dark forest[/tornado][/color][/b], though.
+
+To survive, they must knock on alien doors and pray for sanctuary.
+
+But in a universe of [shake rate=20.0 level=5 connected=1][color=#a30812]predators[/color][/shake], a wrong choice does not mean failure. [shake rate=10.0 level=12 connected=1][b]It means the end of the human race.[b]"
+visible_characters_behavior = 1
 
 [node name="BlackBarTop" type="ColorRect" parent="." unique_id=1409964469]
+layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 200.0
+offset_bottom = 124.0
 grow_horizontal = 2
 color = Color(0, 0, 0, 1)
 
 [node name="BlackBarBottom" type="ColorRect" parent="." unique_id=557091552]
+layout_mode = 1
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -326.0
+offset_top = -353.0
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
 color = Color(0, 0, 0, 1)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1653049432]
-offset_right = 40.0
-offset_bottom = 40.0
-bbcode_enabled = true
+[node name="FadeToBlack" type="ColorRect" parent="." unique_id=917594351]
+z_index = 2000
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
