@@ -218,6 +218,14 @@ offset_top = -135.0
 grow_horizontal = 2
 grow_vertical = 0
 
+[node name="Panel" type="Panel" parent="Answers/Control" unique_id=954997067]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="VBoxContainer" type="VBoxContainer" parent="Answers/Control" unique_id=302082575]
 layout_mode = 1
 anchors_preset = 15
@@ -253,14 +261,6 @@ theme_override_colors/icon_normal_color = Color(1, 1, 1, 0)
 theme_override_font_sizes/font_size = 50
 text = "No"
 script = ExtResource("4_bhyd5")
-
-[node name="Panel" type="Panel" parent="Answers/Control" unique_id=954997067]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [connection signal="pressed" from="Answers/Control/VBoxContainer/HBoxContainer/ButtonYes" to="Answers/Control/VBoxContainer/HBoxContainer/ButtonYes" method="_on_pressed"]
 [connection signal="pressed" from="Answers/Control/VBoxContainer/HBoxContainer/ButtonNo" to="Answers/Control/VBoxContainer/HBoxContainer/ButtonNo" method="_on_pressed"]
