@@ -21,37 +21,43 @@ var aliens =[
 		"ansTmp" : "Text",
 		"ansRes" : "Text",
 		
-		"maxAnswers" : "Int",
+		"maxAnswers" : 3,
 		
 		"extraDialogues" : [
 			{
 				"id" : "N.M",
 				"prerequisite" : "AtmAnswered",
-				"question" : "Text",
+				"question" : "TextAns",
 				"answer" : "Text"
 			},
 			{
 				"id" : "N.M",
-				"prerequisite" : "GvtAnswered",
-				"question" : "Text",
+				"prerequisite" : "AtmAnswered",
+				"question" : "TextGvt",
 				"answer" : "Text"
 			},
 			{
 				"id" : "N.M",
 				"prerequisite" : "WtrAnswered",
-				"question" : "Text",
+				"question" : "TextWtr",
 				"answer" : "Text"
 			},
 			{
 				"id" : "N.M",
 				"prerequisite" : "TmpAnswered",
-				"question" : "Text",
+				"question" : "TextTmp",
 				"answer" : "Text"
 			},
 			{
 				"id" : "N.M",
 				"prerequisite" : "ResAnswered",
-				"question" : "Text",
+				"question" : "TextRes",
+				"answer" : "Text"
+			},
+			{
+				"id" : "N.M",
+				"prerequisite" : "ResAnswered",
+				"question" : "TextRes2",
 				"answer" : "Text"
 			},
 		]
