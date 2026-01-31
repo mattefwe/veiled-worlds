@@ -64,16 +64,16 @@ func update():
 func count_questions(id, arrayquestions, dictquestions):
 	var alien = AlienList.aliens[id]
 	var extradialogues = alien.extraDialogues
-	arrayquestions.append("PlaceholderAtm")
-	arrayquestions.append("PlaceholderGvt")
-	arrayquestions.append("PlaceholderWtr")
-	arrayquestions.append("PlaceholderTmp")
-	arrayquestions.append("PlaceholderRes")
-	dictquestions["PlaceholderAtm"] = alien.ansAtm
-	dictquestions["PlaceholderGvt"] = alien.ansGvt
-	dictquestions["PlaceholderWtr"] = alien.ansWtr
-	dictquestions["PlaceholderTmp"] = alien.ansTmp
-	dictquestions["PlaceholderRes"] = alien.ansRes
+	arrayquestions.append("How is the atmosphere on your planet?")
+	arrayquestions.append("How strong is the gravity on your planet?")
+	arrayquestions.append("How much water does your planet have?")
+	arrayquestions.append("What is the average temperature on your planet?")
+	arrayquestions.append("How rich is your planet in resources?")
+	dictquestions["How is the atmosphere on your planet?"] = alien.ansAtm
+	dictquestions["How strong is the gravity on your planet?"] = alien.ansGvt
+	dictquestions["How much water does your planet have?"] = alien.ansWtr
+	dictquestions["What is the average temperature on your planet?"] = alien.ansTmp
+	dictquestions["How rich is your planet in resources?"] = alien.ansRes
 
 	var count = 0
 	for x in range(extradialogues.size()):
