@@ -9,8 +9,11 @@ var TmpAnswered = false
 var ResAnswered = false
 var dictquestions = {}
 var arrayquestions = []
+var max_ans = AlienList.aliens[currentid].maxAnswers
+var num_ans
 
 func _ready():
+	num_ans = 0
 	count_questions(currentid, arrayquestions, dictquestions)
 	for i in range(arrayquestions.size()):
 		var button = Button.new()
@@ -29,11 +32,6 @@ func update():
 	var dictquestions = {}
 	##cancello tutti i figli
 	var children = get_children()
-	print(AtmAnswered)
-	print(GvtAnswered)
-	print(WtrAnswered)
-	print(TmpAnswered)
-	print(ResAnswered)
 	for child in children:
 		remove_child(child)
 		child.queue_free()
@@ -93,24 +91,26 @@ func count_questions(id, arrayquestions, dictquestions):
 
 
 func _on_pressed(answer):
-	#print(answer)
-	update()
+	if not num_ans > max_ans:
+		#print(answer)
+		num_ans = num_ans + 1
+		update()
 	
 func _check(index):
-	print(index)
-	if index == 0:
-		AtmAnswered = true
-	
-	if index == 1:
-		GvtAnswered = true
-	
-	if index == 2:
-		WtrAnswered = true
-	
-	if index == 3:
-		TmpAnswered = true
-	
-	if index == 4:
-		ResAnswered = true
-	
-	update()
+	if not num_ans > max_ans:
+		if index == 0:
+			AtmAnswered = true
+
+		if index == 1:
+			GvtAnswered = true
+
+		if index == 2:
+			WtrAnswered = true
+
+		if index == 3:
+			TmpAnswered = true
+
+		if index == 4:
+			ResAnswered = true
+
+		update()

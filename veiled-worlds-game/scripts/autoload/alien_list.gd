@@ -21,7 +21,7 @@ var aliens =[
 		"ansTmp" : "Text",
 		"ansRes" : "Text",
 		
-		"maxAnswers" : "Int",
+		"maxAnswers" : 3,
 		
 		"extraDialogues" : [
 			{
