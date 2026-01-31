@@ -1,6 +1,6 @@
 extends Node
 
-
+var arr_aliens_visited = []
 var main_menu = preload("res://scenes/gui/main_menu.tscn")
 var pause_menu = preload("res://scenes/gui/pause_menu.tscn")
 var game_scene = preload("res://scenes/dialogue_scene.tscn")

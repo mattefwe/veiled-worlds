@@ -14,6 +14,15 @@ var ans = "ciao"
 
 func _ready():
 	num_ans = 0
+	AtmAnswered = false
+	GvtAnswered = false
+	WtrAnswered = false
+	TmpAnswered = false
+	ResAnswered = false
+	dictquestions = {}
+	arrayquestions = []
+	max_ans = AlienList.aliens[currentid].maxAnswers
+	ans = "ciao"
 	count_questions(currentid, arrayquestions, dictquestions)
 	##ans = AlienList.aliens[currentid].intro
 	for i in range(arrayquestions.size()):
