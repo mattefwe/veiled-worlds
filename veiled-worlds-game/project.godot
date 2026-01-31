@@ -25,7 +25,6 @@ AlienList="*uid://dkou8dgfgtrtq"
 GameManager="*uid://bgkximvqkk6u2"
 SceneManager="*uid://xoaw6df5mo7y"
 FadeTransition="*uid://7l4vrv3mla8d"
-SettingsAutoload="*uid://by5lhgfktmpdc"
 
 [display]
 

@@ -8,5 +8,4 @@ func _process(_delta: float) -> void:
 
 
 func _on_back_button_pressed() -> void:
-	SettingsAutoload.save_settings()
 	queue_free()

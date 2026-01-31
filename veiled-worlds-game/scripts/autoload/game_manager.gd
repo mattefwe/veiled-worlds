@@ -9,8 +9,6 @@ var game_running : bool = false
 
 func _ready() -> void:
 	RenderingServer.set_default_clear_color(Color(0, 0, 0, 1.00))
-	
-	SettingsAutoload.load_settings()
 
 
 func _process(delta: float) -> void:
