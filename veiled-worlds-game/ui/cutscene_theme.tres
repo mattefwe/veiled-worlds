@@ -1,0 +1,12 @@
+[gd_resource type="Theme" format=3 uid="uid://baflgsjc8d2nf"]
+
+[ext_resource type="FontFile" uid="uid://cfscqfvx5baga" path="res://assets/fonts/anokha/Anokha-Bold.ttf" id="1_nqh8a"]
+[ext_resource type="FontFile" uid="uid://blmwfr3y40556" path="res://assets/fonts/anokha/Anokha-B Italic.ttf" id="2_7txb7"]
+[ext_resource type="FontFile" uid="uid://dt10lh7slqnj0" path="res://assets/fonts/anokha/Anokha-Italic.ttf" id="3_2q64m"]
+[ext_resource type="FontFile" uid="uid://dst6oodlfsybr" path="res://assets/fonts/anokha/Anokha.ttf" id="4_dwn8g"]
+
+[resource]
+RichTextLabel/fonts/bold_font = ExtResource("1_nqh8a")
+RichTextLabel/fonts/bold_italics_font = ExtResource("2_7txb7")
+RichTextLabel/fonts/italics_font = ExtResource("3_2q64m")
+RichTextLabel/fonts/normal_font = ExtResource("4_dwn8g")

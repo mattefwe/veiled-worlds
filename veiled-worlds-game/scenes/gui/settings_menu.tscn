@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c4dr2cjfq8gau"]
 
 [ext_resource type="Script" uid="uid://l1c7c58blp6b" path="res://scripts/gui/settings_menu.gd" id="1_6iibv"]
+[ext_resource type="Theme" uid="uid://yukc6ffqqy3r" path="res://ui/main_menu_theme.tres" id="1_rdapm"]
 
 [node name="SettingsMenu" type="Control" unique_id=1534116777]
 layout_mode = 3
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_rdapm")
 script = ExtResource("1_6iibv")
 
 [node name="Panel" type="Panel" parent="." unique_id=999972052]
@@ -42,7 +44,6 @@ grow_vertical = 2
 [node name="BackButton" type="Button" parent="Panel/VBoxContainer" unique_id=83096076]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 30
 text = "Back"
 
 [connection signal="pressed" from="Panel/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

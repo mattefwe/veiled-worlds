@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c0vt4sm8in4ce"]
 
+[ext_resource type="Theme" uid="uid://yukc6ffqqy3r" path="res://ui/main_menu_theme.tres" id="1_jl0ue"]
 [ext_resource type="Script" uid="uid://d2h5v6us2jh2e" path="res://scripts/gui/main_menu.gd" id="1_xbu81"]
 
 [node name="MainMenu" type="Control" unique_id=548894200]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_jl0ue")
 script = ExtResource("1_xbu81")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=2080642579]
@@ -18,13 +20,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -227.0
-offset_top = -223.0
-offset_right = 227.0
-offset_bottom = -115.0
+offset_left = -305.0
+offset_top = -328.0
+offset_right = 305.0
+offset_bottom = -220.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/normal_font_size = 100
 text = "Veiled Worlds"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -47,19 +49,16 @@ theme_override_constants/separation = 15
 [node name="StartButton" type="Button" parent="VBoxContainer" unique_id=671701111]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 30
 text = "Start Game"
 
 [node name="OptionsButton" type="Button" parent="VBoxContainer" unique_id=721628055]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 30
 text = "Options"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=193586314]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 30
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
