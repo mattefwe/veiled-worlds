@@ -9,7 +9,9 @@ var travel_text : String
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	print(GameManager.fuel)
-	if (GameManager.fuel == 4):
+	if (GameManager.fuel == 5):
+		travel_text = "[b][color=#22705b][tornado radius=3.0 freq=2.0 connected=1]Sorrow[/tornado][/color][/b] fills your heart as you put your fellow survivors in [i][b][color=#1ee6df][wave amp=15.0 freq=5.0 connected=1]cryosleep[/wave][/color][/b][/i] before yourself.\n\nYour ship isn’t going to last long, and deep down you know you [b][i][color=#ff2921][shake rate=20.0 level=8 connected=1]can’t trust[/shake][/color][/i][/b] anyone you meet."
+	elif (GameManager.fuel == 4):
 		travel_text = "You feel confident in the ability of your ship to endure the long journey ahead of you.\n\nThere was no need to take any risks. Something about that alien just felt [shake rate=20.0 level=8 connected=1][b]off...[/b][/shake]"
 	elif (GameManager.fuel == 3):
 		travel_text = "The age of your ship is starting to show, and a feeling of solitude starts growing inside of you.\nBut watching all the cryogenized people you’re trying to save helps ignore that feeling.\n\nTheir lives are in your hands, [b][i][tornado radius=3.0 freq=2.0 connected=1]you can’t let go just now...[/tornado][/i][/b]"
@@ -33,3 +35,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
 		SceneManager.transition_to_scene("res://scenes/dialogue_scene.tscn")
 	else:
 		SceneManager.transition_to_scene("res://scenes/gui/main_menu.tscn")
+
+
+func _on_skip_button_pressed() -> void:
+	animation_player.advance(animation_player.current_animation_length-7)

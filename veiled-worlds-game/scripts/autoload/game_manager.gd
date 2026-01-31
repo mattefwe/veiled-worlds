@@ -1,7 +1,7 @@
 extends Node
 
 var arr_aliens_visited = []
-var fuel = 4
+var fuel = 5
 var main_menu = preload("res://scenes/gui/main_menu.tscn")
 var pause_menu = preload("res://scenes/gui/pause_menu.tscn")
 var start_cutscene = preload("res://cutscenes/start_cutscene.tscn")

@@ -5,7 +5,25 @@
 [ext_resource type="FontFile" uid="uid://dt10lh7slqnj0" path="res://assets/fonts/anokha/Anokha-Italic.ttf" id="3_2q64m"]
 [ext_resource type="FontFile" uid="uid://dst6oodlfsybr" path="res://assets/fonts/anokha/Anokha.ttf" id="4_dwn8g"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nqh8a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7txb7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2q64m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dwn8g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ddv2g"]
+
 [resource]
+Button/colors/font_color = Color(0, 0.4392157, 0.8745098, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("4_dwn8g")
+Button/styles/disabled = SubResource("StyleBoxEmpty_nqh8a")
+Button/styles/focus = SubResource("StyleBoxEmpty_7txb7")
+Button/styles/hover = SubResource("StyleBoxEmpty_2q64m")
+Button/styles/normal = SubResource("StyleBoxEmpty_dwn8g")
+Button/styles/pressed = SubResource("StyleBoxEmpty_ddv2g")
 RichTextLabel/font_sizes/bold_font_size = 58
 RichTextLabel/font_sizes/bold_italics_font_size = 55
 RichTextLabel/font_sizes/italics_font_size = 50
