@@ -10,15 +10,11 @@ var ResAnswered = false
 var arrayquestions = []
 
 func _ready():
-	print("ciao")
 	count_questions(currentid, arrayquestions)
 	for i in range(arrayquestions.size()):
-		var label = Label.new()
-		label.text = arrayquestions[i]
-		print("ok1")
-		print(arrayquestions)
-		print(arrayquestions[i])
-		add_child(label)
+		var button = Button.new()
+		button.text = arrayquestions[i]
+		add_child(button)
 	
 
 func _process(_delta):
@@ -34,14 +30,12 @@ func update():
 	
 	##conto e riinizializzo tutti i figli
 	for i in range(count_questions(currentid, arrayquestions)):
-		var label = Label.new()
-		label.text = arrayquestions[i]
-		add_child(label)
+		var button = Button.new()
+		button.text = arrayquestions[i]
+		add_child(button)
 	
-	pass
 
 func count_questions(id, arrayquestions):
-	print("ok")
 	var alien = AlienList.aliens[id]
 	var extradialogues = alien.extraDialogues
 	arrayquestions.append("PlaceholderAtm")
@@ -50,11 +44,7 @@ func count_questions(id, arrayquestions):
 	arrayquestions.append("PlaceholderTmp")
 	arrayquestions.append("PlaceholderRes") 
 	var count = 0
-	print("ok")
-	print(arrayquestions)
 	for x in range(extradialogues.size()-1):
-		print(extradialogues.size())
-		print(count)
 		if(extradialogues[x].prerequisite == "AtmAnswered" and AtmAnswered == true):
 			count = count+1
 			arrayquestions.append(extradialogues[x].question)
@@ -75,5 +65,4 @@ func count_questions(id, arrayquestions):
 			count = count+1
 			arrayquestions.append(extradialogues[x].question)
 		
-	print("ok")
 	return count
