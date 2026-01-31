@@ -26,7 +26,7 @@ func _ready():
 	ResAnswered = false
 	dictquestions = {}
 	arrayquestions = []
-	max_ans = AlienList.aliens[currentid].maxAnswers
+	max_ans = int(AlienList.aliens[currentid].maxAnswers)
 	ans = "ciao"
 	count_questions(currentid, arrayquestions, dictquestions)
 	##ans = AlienList.aliens[currentid].intro

@@ -1,7 +1,7 @@
 extends Control
 var rng = RandomNumberGenerator.new()
 var currentid
-var num_civs = 0
+var num_civs = 14
 
 func _ready():
 	currentid = rng.randi_range(0, num_civs)
