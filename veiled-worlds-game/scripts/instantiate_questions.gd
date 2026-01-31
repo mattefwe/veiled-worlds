@@ -105,7 +105,7 @@ func _on_pressed(question, answer):
 		#print(answer)
 		print(num_ans)
 		num_ans = num_ans + 1
-		%AnsLabel.text = %AnsLabel.text + question + "\n" + answer + "\n"+"------------------"+"\n"
+		%AnsLabel.text = %AnsLabel.text + "[color=#91daff]You: " + question + "[/color]\n\n" + AlienList.aliens[currentid].name + ": " + answer + "\n\n"+"[hr]"+"\n\n"
 		update()
 	
 func _check(index):

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cw8hxaperah27"]
 
-[ext_resource type="Theme" uid="uid://38pngtcuacxf" path="res://ui/dialogue_theme.tres" id="1_2e7es"]
+[ext_resource type="Theme" uid="uid://c64rgddeob27b" path="res://ui/dialogue_theme.tres" id="1_2e7es"]
 [ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scripts/instantiate_questions.gd" id="1_3l5nu"]
 [ext_resource type="Script" uid="uid://difq4kjaniwyk" path="res://scripts/sensors.gd" id="1_cno1m"]
-[ext_resource type="Script" uid="uid://ctanetr7xrldq" path="res://scripts/buttonyes.gd" id="3_qpcyj"]
+[ext_resource type="Script" path="res://scripts/buttonyes.gd" id="3_qpcyj"]
 [ext_resource type="Script" uid="uid://cx6mshbxmj6l4" path="res://scripts/buttonno.gd" id="4_bhyd5"]
 
 [node name="DialogueScene" type="Control" unique_id=2049827529]
@@ -17,17 +17,40 @@ theme = ExtResource("1_2e7es")
 script = ExtResource("1_cno1m")
 metadata/_edit_use_anchors_ = true
 
-[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1832321068]
+[node name="Questions" type="Control" parent="." unique_id=1194361348]
 layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.74691355
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -300.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="Questions" unique_id=809560496]
+layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Questions" unique_id=1832321068]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 21.0
+offset_top = 22.0
+offset_right = -23.0
+offset_bottom = -19.0
+grow_horizontal = 2
+grow_vertical = 2
 scroll_vertical_custom_step = 100.0
 
-[node name="Questions" type="VBoxContainer" parent="ScrollContainer" unique_id=2004881005]
+[node name="Questions" type="VBoxContainer" parent="Questions/ScrollContainer" unique_id=2004881005]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -38,139 +61,206 @@ metadata/answer_to_write = ""
 layout_mode = 1
 anchor_right = 0.21788195
 anchor_bottom = 0.74691355
+offset_right = 31.666656
+offset_bottom = -26.666626
+grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Sensors" unique_id=1004592996]
+[node name="Panel" type="Panel" parent="Sensors" unique_id=1560847787]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Sensors" unique_id=503797878]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = -1
+anchor_left = 0.069322705
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="Atmosphere" type="Label" parent="Sensors/VBoxContainer" unique_id=781313627]
+[node name="Atmosphere" type="RichTextLabel" parent="Sensors/VBoxContainer" unique_id=751283179]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+bbcode_enabled = true
 text = "Atmosphere:"
+vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Gravity" type="Label" parent="Sensors/VBoxContainer" unique_id=1053838268]
+[node name="Gravity" type="RichTextLabel" parent="Sensors/VBoxContainer" unique_id=1984341897]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+bbcode_enabled = true
 text = "Gravity:"
+vertical_alignment = 1
 
-[node name="Water" type="Label" parent="Sensors/VBoxContainer" unique_id=1340643656]
+[node name="Water" type="RichTextLabel" parent="Sensors/VBoxContainer" unique_id=1822507248]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+bbcode_enabled = true
 text = "Water:"
+vertical_alignment = 1
 
-[node name="Temperature" type="Label" parent="Sensors/VBoxContainer" unique_id=1337710249]
+[node name="Temperature" type="RichTextLabel" parent="Sensors/VBoxContainer" unique_id=396502094]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+bbcode_enabled = true
 text = "Temperature:"
+vertical_alignment = 1
 
-[node name="Resources" type="Label" parent="Sensors/VBoxContainer" unique_id=1710442991]
+[node name="Resources" type="RichTextLabel" parent="Sensors/VBoxContainer" unique_id=1269724648]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+bbcode_enabled = true
 text = "Resources:"
+vertical_alignment = 1
+
+[node name="Alien" type="Control" parent="." unique_id=910958232]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -510.0
+offset_top = -540.0
+offset_right = 270.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Alien" unique_id=791030773]
+
+[node name="Panel" type="Panel" parent="Alien" unique_id=2115330468]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Answers" type="Control" parent="." unique_id=1549394801]
 layout_mode = 1
 anchor_left = 0.7291667
 anchor_right = 1.0
 anchor_bottom = 0.7484568
-grow_horizontal = 0
+offset_left = -170.0
+offset_bottom = -28.333313
+grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
 
-[node name="ColorRect" type="ColorRect" parent="Answers" unique_id=92455597]
+[node name="Panel" type="Panel" parent="Answers" unique_id=727668665]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
 
-[node name="AnsLabel" type="Label" parent="Answers" unique_id=2076210949]
+[node name="AnsLabel" type="RichTextLabel" parent="Answers" unique_id=1867011560]
 unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 81.0
+offset_right = -23.0
+offset_bottom = -150.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Answer"
-metadata/_edit_use_anchors_ = true
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+scroll_following = true
 
-[node name="Alien" type="Control" parent="." unique_id=910958232]
+[node name="RichTextLabel" type="RichTextLabel" parent="Answers" unique_id=2010165049]
 layout_mode = 1
-anchor_left = 0.21961805
-anchor_right = 0.7309028
-anchor_bottom = 0.74691355
-grow_vertical = 0
-metadata/_edit_use_anchors_ = true
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 79.0
+grow_horizontal = 2
+bbcode_enabled = true
+text = "Conversation Log"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="ColorRect" type="ColorRect" parent="Alien" unique_id=946738735]
+[node name="ScrollContainer" type="ScrollContainer" parent="Answers" unique_id=1769694236]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 19.0
+offset_top = 17.0
+offset_right = -19.0
+offset_bottom = -143.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="Answers" unique_id=1816627142]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -135.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Answers/Control" unique_id=302082575]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 18.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Answers/Control/VBoxContainer" unique_id=2063928631]
+layout_mode = 2
+text = "Should we land here?"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Answers/Control/VBoxContainer" unique_id=598147488]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonYes" type="Button" parent="Answers/Control/VBoxContainer/HBoxContainer" unique_id=568946713]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Yes"
+script = ExtResource("3_qpcyj")
+
+[node name="ButtonNo" type="Button" parent="Answers/Control/VBoxContainer/HBoxContainer" unique_id=17847163]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 1, 1, 0)
+theme_override_font_sizes/font_size = 50
+text = "No"
+script = ExtResource("4_bhyd5")
+
+[node name="Panel" type="Panel" parent="Answers/Control" unique_id=954997067]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="Alien" unique_id=791030773]
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Alien" unique_id=302082575]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.820248
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="Label" type="Label" parent="Alien/VBoxContainer" unique_id=2063928631]
-layout_mode = 2
-text = "Should we land here?"
-horizontal_alignment = 1
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Alien/VBoxContainer" unique_id=598147488]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ButtonYes" type="Button" parent="Alien/VBoxContainer/HBoxContainer" unique_id=568946713]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_colors/font_color = Color(0, 1, 0, 1)
-text = "Yes"
-script = ExtResource("3_qpcyj")
-
-[node name="ButtonNo" type="Button" parent="Alien/VBoxContainer/HBoxContainer" unique_id=17847163]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/icon_normal_color = Color(1, 1, 1, 0)
-text = "No"
-script = ExtResource("4_bhyd5")
-
-[connection signal="pressed" from="Alien/VBoxContainer/HBoxContainer/ButtonYes" to="Alien/VBoxContainer/HBoxContainer/ButtonYes" method="_on_pressed"]
-[connection signal="pressed" from="Alien/VBoxContainer/HBoxContainer/ButtonNo" to="Alien/VBoxContainer/HBoxContainer/ButtonNo" method="_on_pressed"]
+[connection signal="pressed" from="Answers/Control/VBoxContainer/HBoxContainer/ButtonYes" to="Answers/Control/VBoxContainer/HBoxContainer/ButtonYes" method="_on_pressed"]
+[connection signal="pressed" from="Answers/Control/VBoxContainer/HBoxContainer/ButtonNo" to="Answers/Control/VBoxContainer/HBoxContainer/ButtonNo" method="_on_pressed"]
