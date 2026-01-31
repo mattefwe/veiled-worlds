@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://c64rgddeob27b" path="res://ui/dialogue_theme.tres" id="1_2e7es"]
 [ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scripts/instantiate_questions.gd" id="1_3l5nu"]
 [ext_resource type="Script" uid="uid://difq4kjaniwyk" path="res://scripts/sensors.gd" id="1_cno1m"]
-[ext_resource type="Script" uid="uid://ctanetr7xrldq" path="res://scripts/buttonyes.gd" id="3_qpcyj"]
+[ext_resource type="Script" path="res://scripts/buttonyes.gd" id="3_qpcyj"]
 [ext_resource type="Script" uid="uid://cx6mshbxmj6l4" path="res://scripts/buttonno.gd" id="4_bhyd5"]
 
 [node name="DialogueScene" type="Control" unique_id=2049827529]
@@ -194,19 +194,6 @@ bbcode_enabled = true
 text = "Conversation Log"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="ScrollContainer" type="ScrollContainer" parent="Answers" unique_id=1769694236]
-visible = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 19.0
-offset_top = 17.0
-offset_right = -19.0
-offset_bottom = -143.0
-grow_horizontal = 2
-grow_vertical = 2
 
 [node name="Control" type="Control" parent="Answers" unique_id=1816627142]
 layout_mode = 1

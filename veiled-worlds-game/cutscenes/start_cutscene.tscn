@@ -402,6 +402,7 @@ size_flags_vertical = 4
 color = Color(0, 0, 0, 1)
 
 [node name="FadeToBlack" type="ColorRect" parent="." unique_id=917594351]
+visible = false
 z_index = 2000
 layout_mode = 1
 anchors_preset = 15
