@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bnfedf7d7bmdf"
+path="res://.godot/imported/Intro 2.ogg-80208c508074aa8001ddc4f8751d2944.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/TEMI/INTRO/Intro 2.ogg"
+dest_files=["res://.godot/imported/Intro 2.ogg-80208c508074aa8001ddc4f8751d2944.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

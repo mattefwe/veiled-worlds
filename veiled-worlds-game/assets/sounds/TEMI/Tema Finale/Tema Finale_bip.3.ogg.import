@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://51ffsq776xjq"
+path="res://.godot/imported/Tema Finale_bip.3.ogg-bef1e020400142bde3437b92a2279b3a.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/TEMI/Tema Finale/Tema Finale_bip.3.ogg"
+dest_files=["res://.godot/imported/Tema Finale_bip.3.ogg-bef1e020400142bde3437b92a2279b3a.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

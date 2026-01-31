@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bg1qodwyqhvn"
+path="res://.godot/imported/TEMA GUERRA.ogg-d7051b2aaf0cd8a8ffcf4987a1eb0912.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/TEMI/Tema Guerra/TEMA GUERRA.ogg"
+dest_files=["res://.godot/imported/TEMA GUERRA.ogg-d7051b2aaf0cd8a8ffcf4987a1eb0912.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

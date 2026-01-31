@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://becb3pmrp6bn1"
+path="res://.godot/imported/PULSANTE FUTURO.wav-205c278ae052ff2d0b3ef7f94fac7709.sample"
+
+[deps]
+
+source_file="res://assets/sounds/FX/PULSANTE FUTURO.wav"
+dest_files=["res://.godot/imported/PULSANTE FUTURO.wav-205c278ae052ff2d0b3ef7f94fac7709.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

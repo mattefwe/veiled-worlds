@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bqc3qcpbg87tg"]
+
+[node name="StartCutscene" type="Node" unique_id=1489723782]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1912703365]
+
+[node name="BlackBarTop" type="ColorRect" parent="." unique_id=1409964469]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 200.0
+grow_horizontal = 2
+color = Color(0, 0, 0, 1)
+
+[node name="BlackBarBottom" type="ColorRect" parent="." unique_id=557091552]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -326.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1653049432]
+offset_right = 40.0
+offset_bottom = 40.0

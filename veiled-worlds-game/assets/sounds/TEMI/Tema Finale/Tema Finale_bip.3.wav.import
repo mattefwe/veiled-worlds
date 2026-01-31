@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://byrl6ygx5lnh1"
+path="res://.godot/imported/Tema Finale_bip.3.wav-9d724a568c49ebba42c76dbc66d64e7b.sample"
+
+[deps]
+
+source_file="res://assets/sounds/TEMI/Tema Finale/Tema Finale_bip.3.wav"
+dest_files=["res://.godot/imported/Tema Finale_bip.3.wav-9d724a568c49ebba42c76dbc66d64e7b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

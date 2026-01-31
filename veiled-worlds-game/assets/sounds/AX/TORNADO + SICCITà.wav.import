@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b4u5roytcmhnl"
+path="res://.godot/imported/TORNADO + SICCITà.wav-83629e964439ffb9caa20c2fb10ad103.sample"
+
+[deps]
+
+source_file="res://assets/sounds/AX/TORNADO + SICCITà.wav"
+dest_files=["res://.godot/imported/TORNADO + SICCITà.wav-83629e964439ffb9caa20c2fb10ad103.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

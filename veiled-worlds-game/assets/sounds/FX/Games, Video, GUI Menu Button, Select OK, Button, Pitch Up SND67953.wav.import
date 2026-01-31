@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://8emiwy5ikvpn"
+path="res://.godot/imported/Games, Video, GUI Menu Button, Select OK, Button, Pitch Up SND67953.wav-52b48f8d15c38c2c806fbfdf92460275.sample"
+
+[deps]
+
+source_file="res://assets/sounds/FX/Games, Video, GUI Menu Button, Select OK, Button, Pitch Up SND67953.wav"
+dest_files=["res://.godot/imported/Games, Video, GUI Menu Button, Select OK, Button, Pitch Up SND67953.wav-52b48f8d15c38c2c806fbfdf92460275.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
