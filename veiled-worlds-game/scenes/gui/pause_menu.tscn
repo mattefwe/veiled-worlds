@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://dqlr5xlfig7h1"]
+
+[node name="PauseMenu" type="Control" unique_id=2036254049]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=570486937]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -190.0
+offset_top = -130.0
+offset_right = 190.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="ResumeButton" type="Button" parent="VBoxContainer" unique_id=112161119]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "Resume"
+
+[node name="OptionsButton" type="Button" parent="VBoxContainer" unique_id=2105669880]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "Options"
+
+[node name="MenuButton" type="Button" parent="VBoxContainer" unique_id=1310273037]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "Main Menu"

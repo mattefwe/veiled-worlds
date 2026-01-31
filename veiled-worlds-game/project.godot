@@ -21,6 +21,10 @@ config/icon="res://icon.svg"
 [autoload]
 
 AlienList="*uid://dkou8dgfgtrtq"
+GameManager="*uid://bgkximvqkk6u2"
+SceneManager="*uid://xoaw6df5mo7y"
+SettingsManager="*uid://ckj8t0o77j17i"
+FadeTransition="*uid://7l4vrv3mla8d"
 
 [dotnet]
 
@@ -33,3 +37,4 @@ project/assembly_name="Veiled Worlds Game"
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
