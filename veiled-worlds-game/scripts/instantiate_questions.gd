@@ -8,11 +8,16 @@ var TmpAnswered = false
 var ResAnswered = false
 var dictquestions = {}
 var arrayquestions = []
-var max_ans = AlienList.aliens[currentid].maxAnswers
+var max_ans
 var num_ans
 var ans = "ciao"
 
 func _ready():
+	await get_node("../../..").ready
+	var node = $"../../.."
+	print(node)
+	currentid = node.currentid
+	print(currentid)
 	num_ans = 0
 	AtmAnswered = false
 	GvtAnswered = false
@@ -107,6 +112,10 @@ func _on_pressed(question, answer):
 		num_ans = num_ans + 1
 		%AnsLabel.text = %AnsLabel.text + "[color=#91daff]You: " + question + "[/color]\n\n" + AlienList.aliens[currentid].name + ": " + answer + "\n\n"+"[hr]"+"\n\n"
 		update()
+	else:
+		if num_ans == max_ans + 1:
+			%AnsLabel.text = %AnsLabel.text + "The communication systems have failed, perhaps due to their old age. You cannot ask question anymore, and you now have to make a choice"+"\n\n"
+			num_ans = num_ans+1
 	
 func _check(index):
 	if not num_ans > max_ans:
@@ -127,3 +136,4 @@ func _check(index):
 
 		
 		update()
+		

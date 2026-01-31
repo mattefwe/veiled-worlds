@@ -6,8 +6,14 @@ var num_civs = 0
 func _ready():
 	currentid = rng.randi_range(0, num_civs)
 	while currentid in GameManager.arr_aliens_visited:
-		currentid = rng.randi_range(0, num_civs)
+		if GameManager.arr_aliens_visited.size() == 12:
+			break
+		else:
+			currentid = rng.randi_range(0, num_civs)
 	GameManager.arr_aliens_visited.append(currentid)
+	#%AnsLabel.text = AlienList.aliens[currentid].
+	print(GameManager.arr_aliens_visited)
+	print(currentid)
 	update()
 		
 

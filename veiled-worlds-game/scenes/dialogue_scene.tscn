@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://c64rgddeob27b" path="res://ui/dialogue_theme.tres" id="1_2e7es"]
 [ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scripts/instantiate_questions.gd" id="1_3l5nu"]
 [ext_resource type="Script" uid="uid://difq4kjaniwyk" path="res://scripts/sensors.gd" id="1_cno1m"]
-[ext_resource type="Script" path="res://scripts/buttonyes.gd" id="3_qpcyj"]
+[ext_resource type="Script" uid="uid://ctanetr7xrldq" path="res://scripts/buttonyes.gd" id="3_qpcyj"]
 [ext_resource type="Script" uid="uid://cx6mshbxmj6l4" path="res://scripts/buttonno.gd" id="4_bhyd5"]
 
 [node name="DialogueScene" type="Control" unique_id=2049827529]
