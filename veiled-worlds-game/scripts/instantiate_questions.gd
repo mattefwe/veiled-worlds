@@ -1,6 +1,5 @@
 extends VBoxContainer
 
-
 var currentid = 0
 var AtmAnswered = false
 var GvtAnswered = false
@@ -11,10 +10,12 @@ var dictquestions = {}
 var arrayquestions = []
 var max_ans = AlienList.aliens[currentid].maxAnswers
 var num_ans
+var ans = "ciao"
 
 func _ready():
 	num_ans = 0
 	count_questions(currentid, arrayquestions, dictquestions)
+	##ans = AlienList.aliens[currentid].intro
 	for i in range(arrayquestions.size()):
 		var button = Button.new()
 		button.text = arrayquestions[i]
@@ -94,6 +95,7 @@ func _on_pressed(answer):
 	if not num_ans > max_ans:
 		#print(answer)
 		num_ans = num_ans + 1
+		%AnsLabel.text = answer
 		update()
 	
 func _check(index):
@@ -114,3 +116,7 @@ func _check(index):
 			ResAnswered = true
 
 		update()
+
+
+func _print_answer():
+	return self.get_meta("answer_to_write")

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cw8hxaperah27"]
 
 [ext_resource type="Script" uid="uid://d0s7ptyxb3hoi" path="res://scripts/instantiate_questions.gd" id="1_3l5nu"]
+[ext_resource type="Script" uid="uid://duf30f0h4ypk3" path="res://scripts/answer.gd" id="2_cno1m"]
 
 [node name="DialogueScene" type="Control" unique_id=2049827529]
 layout_mode = 3
@@ -25,7 +26,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_3l5nu")
-metadata/answer_to_write = ""
+metadata/Answer_to = ""
 
 [node name="Sensors" type="Control" parent="." unique_id=537190069]
 layout_mode = 1
@@ -98,8 +99,7 @@ grow_vertical = 2
 color = Color(0, 1, 1, 1)
 metadata/_edit_use_anchors_ = true
 
-[node name="AnsLabel" type="Label" parent="Answers" unique_id=2076210949]
-unique_name_in_owner = true
+[node name="Label" type="Label" parent="Answers" unique_id=2076210949]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -107,6 +107,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Answer"
+script = ExtResource("2_cno1m")
 metadata/_edit_use_anchors_ = true
 
 [node name="Alien" type="Control" parent="." unique_id=910958232]
