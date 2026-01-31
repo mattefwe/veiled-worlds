@@ -55,11 +55,11 @@ func count_questions(id, arrayquestions, dictquestions):
 	arrayquestions.append("PlaceholderWtr")
 	arrayquestions.append("PlaceholderTmp")
 	arrayquestions.append("PlaceholderRes")
-	dictquestions["PlaceholderAtm"] = "PlaceholderAnsAtm"
-	dictquestions["PlaceholderGvt"] = "PlaceholderAnsGvt"
-	dictquestions["PlaceholderWtr"] = "PlaceholderAnsWtr"
-	dictquestions["PlaceholderTmp"] = "PlaceholderAnsTmp"
-	dictquestions["PlaceholderRes"] = "PlaceholderAnsRes"
+	dictquestions["PlaceholderAtm"] = alien.ansAtm
+	dictquestions["PlaceholderGvt"] = alien.ansGvt
+	dictquestions["PlaceholderWtr"] = alien.ansWtr
+	dictquestions["PlaceholderTmp"] = alien.ansTmp
+	dictquestions["PlaceholderRes"] = alien.ansRes
 
 	var count = 0
 	for x in range(extradialogues.size()):
