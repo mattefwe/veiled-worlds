@@ -388,45 +388,21 @@ var aliens =[
 		"ansTmp" : "A little cold but nothing to be concerned about.",
 		"ansRes" : "We have many resources to use.",
 		
-		"maxAnswers" : 3,
+		"maxAnswers" : "4",
 		
 		"extraDialogues" : [
 			{
-				"id" : "N.M",
+				"id" : "10.1",
 				"prerequisite" : "AtmAnswered",
-				"question" : "TextAns",
-				"answer" : "Text"
+				"question" : "Why does it look like that the planet has a dark atmosphere?",
+				"answer" : "Don't worry, it's just the color of planet which reflect on the atmosphere."
 			},
 			{
-				"id" : "N.M",
-				"prerequisite" : "AtmAnswered",
-				"question" : "TextGvt",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
+				"id" : "10.2",
 				"prerequisite" : "WtrAnswered",
-				"question" : "TextWtr",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "TmpAnswered",
-				"question" : "TextTmp",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "ResAnswered",
-				"question" : "TextRes",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "ResAnswered",
-				"question" : "TextRes2",
-				"answer" : "Text"
-			},
+				"question" : "What state is the water in?",
+				"answer" : "It's mainly in solid state due to the cold."
+			}
 		],
 		"epilogue" : "As soon as you land, some were swept by euphoria. Finaly they were on a new world, 
 		but soon reality crept into their dreams: the air was unbreathable, every breath without a mask meant instant death.
@@ -451,44 +427,20 @@ var aliens =[
 		 
 		"ansAtm" : "There are a lot of trees which raised the level of oxygen in the atmosphere.",
 		"ansGvt" : "Our low gravity let trees grow a lot more higher than the Earth's trees.",
-		"ansWtr" : "We don't have only trees but a lot of water too with many seas.",
+		"ansWtr" : "We don't have only trees but a lot of water too, with many seas.",
 		"ansTmp" : "The climate is moderately hot.",
-		"ansRes" : "Our planet can offer high quantity of resources, thanks to the large amount
+		"ansRes" : "Our planet can offer high quantity of resources and thanks to the large amount
 		of water, it's easier to farm.",
 		
-		"maxAnswers" : "Int",
+		"maxAnswers" : "5",
 		
 		"extraDialogues" : [
 			{
-				"id" : "N.M",
+				"id" : "11.1",
 				"prerequisite" : "AtmAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "GvtAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "WtrAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "TmpAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "ResAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
+				"question" : "You seem to be very connected to the nature. Why is that?",
+				"answer" : "We believe that water and nature are the hidden force that connects everything and everyone."
+			}
 		],
 		"epilogue" : "Finally the humans had found their place alongside the natives:
 		wise and peaceful beings who knew the secrets of the seas and the riverine forests.
@@ -518,39 +470,22 @@ var aliens =[
 		"ansTmp" : "Our temperature won't bother you, because it's warm during the day and chilly during the night.",
 		"ansRes" : "We are very good in smithing, because our planet is full of resources.",
 		
-		"maxAnswers" : "Int",
+		"maxAnswers" : "4",
 		
 		"extraDialogues" : [
 			{
-				"id" : "N.M",
+				"id" : "12.1",
 				"prerequisite" : "AtmAnswered",
-				"question" : "Text",
-				"answer" : "Text"
+				"question" : "Why is the atmosphere good for you?",
+				"answer" : "Because it has lot of oxygen and some other gasses that give that bad look to the
+				atmosphere, but those gasses aren't harmful to humans."
 			},
 			{
-				"id" : "N.M",
-				"prerequisite" : "GvtAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "WtrAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "TmpAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
+				"id" : "12.2",
 				"prerequisite" : "ResAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
+				"question" : "Where does your skill in smithing come from?",
+				"answer" : "Since our planet is full of resources, we can train and smith every kind of utensils."
+			}
 		],
 		"epilogue" : "When the ships touched down, the planet finally revealed its true face.
 		Temperatures shifted without warning: cold that stole the breath, heat that burned the skin.
@@ -577,44 +512,27 @@ var aliens =[
 		 
 		"ansAtm" : "Our atmosphere may be rarefied but don't worry it contains lots of oxygen and psychic energy.",
 		"ansGvt" : "The gravity on our planet will make you think that you are still on Earth.",
-		"ansWtr" : "There's plenty of water, both in the surface, such as seas and lakes, and the underground.",
+		"ansWtr" : "There's plenty of water, both in the surface, such as seas and lakes, and in the underground.",
 		"ansTmp" : "It's not hot but not fresh too.",
 		"ansRes" : "Thanks to the psychic energy in the atmosphere and the resources we have, 
 		the average intelligence grew.",
 		
-		"maxAnswers" : "Int",
+		"maxAnswers" : "5",
 		
 		"extraDialogues" : [
 			{
-				"id" : "N.M",
+				"id" : "13.1",
 				"prerequisite" : "AtmAnswered",
-				"question" : "Text",
-				"answer" : "Text"
+				"question" : "What is the psychic energy?",
+				"answer" : "It's a kind of energy which permeates our planet, at first it messes your head,
+				causing confusion but once you get used to it, it can help you grow your brain."
 			},
 			{
-				"id" : "N.M",
-				"prerequisite" : "GvtAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "WtrAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "TmpAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
+				"id" : "13.2",
 				"prerequisite" : "ResAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
+				"question" : "Are you able to read our...",
+				"answer" : "minds? Yes, we are."
+			}
 		],
 		"epilogue" : "At first, they called that world a possibility. A planet of water and mist, 
 		where the thin atmosphere made the sky pale and every breath short, but not impossible.
@@ -647,45 +565,30 @@ var aliens =[
 		"ansTmp" : "It may be a little hot but tolerable after a while.",
 		"ansRes" : "We live easily with the resources that the planet gives us.",
 		
-		"maxAnswers" : "Int",
+		"maxAnswers" : "4",
 		
 		"extraDialogues" : [
 			{
-				"id" : "N.M",
+				"id" : "14.1",
 				"prerequisite" : "AtmAnswered",
-				"question" : "Text",
-				"answer" : "Text"
+				"question" : "What caused the toxicity in the atmosphere?",
+				"answer" : "We think that someone in the past didn't treat well this planet."
 			},
 			{
-				"id" : "N.M",
-				"prerequisite" : "GvtAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
+				"id" : "14.2",
 				"prerequisite" : "WtrAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "TmpAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "ResAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
+				"question" : "Where do you find water?",
+				"answer" : "We usually find it in some small lake in the underground or in some cave."
+			}
 		],
 		"epilogue" : "The planet had never stopped trying to kill them. 
 		The toxic atmosphere corroded lungs and filters alike, and the constant, 
 		overly high temperature turned every movement into an exhausting effort. At first, the humans 
 		tried to endure on their own, sealed inside their suits and modules, convinced that technology 
-		could bend even such a hostile world."
+		could bend even such a hostile world. Over time, shared settlements emerged, where human domes 
+		intertwined with the natives’ organic structures. They had changed. They had learned that even 
+		on the deadliest worlds, cooperation can make room for life—not by conquering the environment, 
+		but by sharing its burden. Survivors: 75%. "
 	},
 	{
 		"id" : "15",
@@ -708,40 +611,31 @@ var aliens =[
 		"ansTmp" : "Usually it's not very hot.",
 		"ansRes" : "Thanks to special minerals, we can briefly control the flow of time.",
 		
-		"maxAnswers" : "Int",
+		"maxAnswers" : "5",
 		
 		"extraDialogues" : [
 			{
-				"id" : "N.M",
-				"prerequisite" : "AtmAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
+				"id" : "15.1",
 				"prerequisite" : "GvtAnswered",
-				"question" : "Text",
-				"answer" : "Text"
+				"question" : "How can we adapt to this gravity?",
+				"answer" : "You have to make small steps each day and you'll see that you
+				will able to run and jump in no time."
 			},
 			{
-				"id" : "N.M",
-				"prerequisite" : "WtrAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
-				"prerequisite" : "TmpAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
-			{
-				"id" : "N.M",
+				"id" : "15.2",
 				"prerequisite" : "ResAnswered",
-				"question" : "Text",
-				"answer" : "Text"
-			},
+				"question" : "What kind of special minerals?",
+				"answer" : "They are called 'Pebbles of time', by throwing some of them behind of you
+				you can briefly go back in time."
+			}
 		],
-		"epilogue" : ""
+		"epilogue" : "The planet’s air was overly rich in oxygen. Every breath burned in the lungs 
+		like a contained flame, and the higher-than-expected gravity made every step slow and deliberate. 
+		The humans arrived prepared to endure, not to live—and for a long time, that was all they managed to do.
+		In the end, the humans understood that it was neither technology nor their own determination that ensured 
+		survival. It was the wisdom of the natives and their temporary control over time that transformed a hostile
+		world into a home. And as the shining sky reflected light across the heavy, oxygen-rich air, the two species 
+		learned the most important lesson: time, when shared, can unite more than strength ever could.
+		Survivors: All."
 	}
 ]
