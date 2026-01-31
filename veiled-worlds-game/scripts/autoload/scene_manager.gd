@@ -2,7 +2,6 @@ extends Node
 
 
 func transition_to_scene(path : String) -> void:
-	
 	if path != null:
 		FadeTransition.transition()
 		await FadeTransition.on_transition_finished

@@ -1,12 +1,14 @@
 extends Node
 
 
-var main_menu = preload("res://scenes/main_menu.tscn")
+var main_menu = preload("res://scenes/gui/main_menu.tscn")
+var pause_menu = preload("res://scenes/gui/pause_menu.tscn")
+var game_scene = preload("res://scenes/dialogue_scene.tscn")
 var game_running : bool = false
 
 
 func _ready() -> void:
-	RenderingServer.set_default_clear_color(Color(0.44, 0.12, 0.53, 1.00))
+	#RenderingServer.set_default_clear_color(Color(0.44, 0.12, 0.53, 1.00))
 	
 	SettingsManager.load_settings()
 
@@ -18,8 +20,7 @@ func _process(delta: float) -> void:
 
 func start_game() -> void:
 	resume_game()
-	game_running = true
-	SceneManager.transition_to_scene("Level1")
+	SceneManager.transition_to_scene(game_scene.resource_path)
 
 
 func quit_game() -> void:
@@ -28,21 +29,21 @@ func quit_game() -> void:
 
 func pause_game() -> void:
 	if game_running:
-		get_tree().paused = true
-	
+		game_running = false
+		
 		var pause_menu_instance = pause_menu.instantiate()
 		get_tree().get_root().add_child(pause_menu_instance)
 
 
 func resume_game() -> void:
-	get_tree().paused = false
+	game_running = true
 
 
 func load_main_menu() -> void:
 	game_running = false
-	transition_to_scene(main_menu.resource_path)
+	SceneManager.transition_to_scene(main_menu.resource_path)
 
 
-func transition_to_scene(scene_path : String) -> void:
-	await get_tree().create_timer(0.5).timeout
-	get_tree().change_scene_to_file(scene_path)
+#func transition_to_scene(scene_path : String) -> void:
+	#await get_tree().create_timer(0.5).timeout
+	#get_tree().change_scene_to_file(scene_path)

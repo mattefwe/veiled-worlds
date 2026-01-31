@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://c0vt4sm8in4ce"]
 
+[ext_resource type="Script" uid="uid://d2h5v6us2jh2e" path="res://scripts/gui/main_menu.gd" id="1_xbu81"]
+
 [node name="MainMenu" type="Control" unique_id=548894200]
 layout_mode = 3
 anchors_preset = 15
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xbu81")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=2080642579]
 layout_mode = 1
@@ -58,3 +61,7 @@ layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://7l4vrv3mla8d"]
+[gd_scene format=3 uid="uid://7l4vrv3mla8d"]
 
-[ext_resource type="Script" path="res://assets/transitions/fade_transition.gd" id="1_qvq8q"]
+[ext_resource type="Script" uid="uid://bdtykjjfckwlx" path="res://assets/transitions/fade_transition.gd" id="1_qvq8q"]
 
 [sub_resource type="Animation" id="Animation_kgnxl"]
 length = 0.001
@@ -51,27 +51,25 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_g8gdw"]
 _data = {
-"RESET": SubResource("Animation_kgnxl"),
-"fade_to_black": SubResource("Animation_arbjx"),
-"fade_to_normal": SubResource("Animation_e6y2n")
+&"RESET": SubResource("Animation_kgnxl"),
+&"fade_to_black": SubResource("Animation_arbjx"),
+&"fade_to_normal": SubResource("Animation_e6y2n")
 }
 
-[node name="FadeTransition" type="CanvasLayer"]
+[node name="FadeTransition" type="CanvasLayer" unique_id=763985429]
 layer = 3
 script = ExtResource("1_qvq8q")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=398106796]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.231373, 0.0705882, 0.345098, 1)
+color = Color(0, 0, 0, 1)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_g8gdw")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=855082706]
+libraries/ = SubResource("AnimationLibrary_g8gdw")
 next/RESET = &"fade_to_normal"
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
