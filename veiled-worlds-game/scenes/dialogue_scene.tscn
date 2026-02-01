@@ -139,7 +139,23 @@ offset_bottom = 240.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="Alien" unique_id=791030773]
+[node name="PanelContainer" type="PanelContainer" parent="Alien" unique_id=94512966]
+clip_children = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AlienBackground" type="TextureRect" parent="Alien/PanelContainer" unique_id=420553579]
+layout_mode = 2
+
+[node name="AlienFace" type="TextureRect" parent="Alien/PanelContainer" unique_id=1927926642]
+layout_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="Alien/PanelContainer" unique_id=118228111]
+layout_mode = 2
 
 [node name="Panel" type="Panel" parent="Alien" unique_id=2115330468]
 layout_mode = 1
