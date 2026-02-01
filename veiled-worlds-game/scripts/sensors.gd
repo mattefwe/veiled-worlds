@@ -11,7 +11,8 @@ func _ready():
 		else:
 			currentid = rng.randi_range(0, num_civs)
 	GameManager.arr_aliens_visited.append(currentid)
-	%AnsLabel.text = "[b][i][color=#a30812]"+"\n\n"+AlienList.aliens[currentid].name+"[/color], "+AlienList.aliens[currentid].planetName+"'s Representative:[/i][/b]\n\n[i]"+AlienList.aliens[currentid].initialSentence+"[/i]" + "\n\n"+"[hr]"+"\n\n" 
+	%AnsLabel.text = "[b][i][color=#a30812]"+"\n"+AlienList.aliens[currentid].name+"[/color], "+AlienList.aliens[currentid].planetName+"'s Representative:[/i][/b]\n\n[i]"+AlienList.aliens[currentid].initialSentence+"[/i]" + "\n\n"+"[hr]"+"\n\n" 
+	%PlanetName.text = "Planet Name: "+AlienList.aliens[currentid].planetName
 	print(GameManager.arr_aliens_visited)
 	print(currentid)
 	update()
