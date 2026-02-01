@@ -3,7 +3,8 @@ extends Node
 var aliens =[
 	{
 		"id" : "1",
-		"picture" : "Path",
+		"picture" : "res://assets/images/zyrrac.png",
+		"background" : null,
 		"name" : "Zyrrak",
 		"hostile" : "true",
 		"initialSentence" : "Every step you take here weighs twice as much. Why have you come?",
@@ -38,7 +39,8 @@ var aliens =[
 	},
 	{
 		"id" : "2",
-		"picture" : "Path",
+		"picture" : "res://assets/images/aelith.png",
+		"background" : null,
 		"name" : "Aelith",
 		"hostile" : "false",
 		"initialSentence" : "Lunarys does not reject guests...if they bring peace",
@@ -74,7 +76,8 @@ var aliens =[
 	},
 	{
 		"id" : "3",
-		"picture" : "Path",
+		"picture" : "res://assets/images/drogg.png",
+		"background" : null,
 		"name" : "Drogg",
 		"hostile" : "true",
 		"initialSentence" : "Only those who build faster survive here.",
@@ -117,7 +120,8 @@ var aliens =[
 	},
 	{
 		"id" : "4",
-		"picture" : "Path",
+		"picture" : "res://assets/images/nimrae.png",
+		"background" : null,
 		"name" : "Nim'rae",
 		"hostile" : "true",
 		"initialSentence" : "Your future has already passed before me.",
@@ -153,7 +157,8 @@ var aliens =[
 	},
 	{
 		"id" : "5",
-		"picture" : "Path",
+		"picture" : "res://assets/images/khaluun.png",
+		"background" : null,
 		"name" : "Khaluun",
 		"hostile" : "true",
 		"initialSentence" : "Every creature here can heal... or kill.",
@@ -197,7 +202,8 @@ var aliens =[
 	},
 	{
 		"id" : "6",
-		"picture" : "Path",
+		"picture" : "res://assets/images/lumae.png",
+		"background" : null,
 		"name" : "Lumae",
 		"hostile" : "true",
 		"initialSentence" : "Listen to the light, not the words.",
@@ -235,7 +241,8 @@ var aliens =[
 	},
 	{
 		"id" : "7",
-		"picture" : "Path",
+		"picture" : "res://assets/images/krynn.png",
+		"background" : null,
 		"name" : "Krynn",
 		"hostile" : "true",
 		"initialSentence" : "The sun taught us to master energy.",
@@ -279,7 +286,8 @@ var aliens =[
 	},
 	{
 		"id" : "8",
-		"picture" : "Path",
+		"picture" : "res://assets/images/eryss.png",
+		"background" : null,
 		"name" : "Eryss",
 		"hostile" : "false",
 		"initialSentence" : "The ocean already know who you are.",
@@ -323,7 +331,8 @@ var aliens =[
 	},
 	{
 		"id" : "9",
-		"picture" : "Path",
+		"picture" : "res://assets/images/saelith.png",
+		"background" : null,
 		"name" : "Saelith",
 		"hostile" : "true",
 		"initialSentence" : "Every sound dies here. Even lies.",
@@ -369,7 +378,8 @@ var aliens =[
 	},
 	{
 		"id" : "10",
-		"picture" : "Path",
+		"picture" : "res://assets/images/kael.png",
+		"background" : null,
 		"name" : "Kael",
 		"hostile" : "true",
 		"initialSentence" : "You breathe fast, little traveler. Aethyron does not forgive weakness.",
@@ -412,7 +422,8 @@ var aliens =[
 	},
 	{
 		"id" : "11",
-		"picture" : "Path",
+		"picture" : "res://assets/images/numae.png",
+		"background" : null,
 		"name" : "Num'ae",
 		"hostile" : "false",
 		"initialSentence" : "The ocean hears your voice before I do.",
@@ -451,7 +462,8 @@ var aliens =[
 	},
 	{
 		"id" : "12",
-		"picture" : "Path",
+		"picture" : "res://assets/images/grulktan.png",
+		"background" : null,
 		"name" : "Grulk-Tan",
 		"hostile" : "true",
 		"initialSentence" : "Survive this planet, then we talk.",
@@ -497,7 +509,8 @@ var aliens =[
 	},
 	{
 		"id" : "13",
-		"picture" : "Path",
+		"picture" : "res://assets/images/eshra.png",
+		"background" : null,
 		"name" : "Esh'ra",
 		"hostile" : "true",
 		"initialSentence" : "Your thoughts are loud. Silence them.",
@@ -546,7 +559,8 @@ var aliens =[
 	},
 	{
 		"id" : "14",
-		"picture" : "Path",
+		"picture" : "res://assets/images/pokk9.png",
+		"background" : null,
 		"name" : "Pokk-9",
 		"hostile" : "false",
 		"initialSentence" : "Nothing is useless. Not even you.",
@@ -592,7 +606,8 @@ var aliens =[
 	},
 	{
 		"id" : "15",
-		"picture" : "Path",
+		"picture" : "res://assets/images/threxilvon.png",
+		"background" : null,
 		"name" : "Threxil-Von",
 		"hostile" : "false",
 		"initialSentence" : "You are early... or late. It depends.",
