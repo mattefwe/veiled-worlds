@@ -1,7 +1,12 @@
 extends Control
+
 var rng = RandomNumberGenerator.new()
 var currentid
 var num_civs = 14
+
+@onready var alien_background: TextureRect = $Alien/PanelContainer/AlienBackground
+@onready var alien_face: TextureRect = $Alien/PanelContainer/AlienFace
+
 
 func _ready():
 	currentid = rng.randi_range(0, num_civs)
@@ -13,6 +18,10 @@ func _ready():
 	GameManager.arr_aliens_visited.append(currentid)
 	%AnsLabel.text = "[b][i][color=#a30812]"+"\n"+AlienList.aliens[currentid].name+"[/color], "+AlienList.aliens[currentid].planetName+"'s Representative:[/i][/b]\n\n[i]"+AlienList.aliens[currentid].initialSentence+"[/i]" + "\n\n"+"[hr]"+"\n\n" 
 	%PlanetName.text = "Planet Name: "+AlienList.aliens[currentid].planetName
+	
+	alien_face.texture = load(AlienList.aliens[currentid].picture)
+	#alien_background.texture = load(AlienList.aliens[currentid].background)
+	
 	print(GameManager.arr_aliens_visited)
 	print(currentid)
 	update()
