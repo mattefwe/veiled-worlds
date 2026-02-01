@@ -150,6 +150,8 @@ grow_vertical = 2
 
 [node name="AlienBackground" type="TextureRect" parent="Alien/PanelContainer" unique_id=420553579]
 layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
 
 [node name="AlienFace" type="TextureRect" parent="Alien/PanelContainer" unique_id=1927926642]
 layout_mode = 2
